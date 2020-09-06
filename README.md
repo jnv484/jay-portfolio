@@ -13,10 +13,6 @@
 ## What is Vue Modern Resume?
 Vue Modern Resume is basically a simple (yet easy to setup) resume template based on <a href="https://vuejs.org/">Vue.js</a> framework and <a href="https://vuetifyjs.com/">Vuetify</a> UI toolkit.
 
-## Preview
-See the [raw demo](https://evryn.github.io/vue-modern-resume/) or my own [portfolio] based-on Vue Modern Resume.
-
-
 
 ## How to use
 
