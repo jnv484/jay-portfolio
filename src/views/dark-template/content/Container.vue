@@ -107,7 +107,7 @@
         </v-layout>
       </content-section>
 
-         <content-section
+         <!-- <content-section
         v-if="tools"
         title="Tools I am familiar with!"
       >
@@ -133,7 +133,7 @@
             </p>
           </v-flex>
         </v-layout>
-      </content-section>
+      </content-section> -->
     </v-card-text>
   </v-card>
 </template>
@@ -179,14 +179,14 @@ export default {
         value: 70,
       },
       {
-        title: 'Spring Framework',
-        icon : 'mdi-code-braces',
+        title: 'Python',
+        icon : 'mdi-language-python',
         value: 70,
       },
       {
-        title: 'Vue.js Framework',
-        icon : 'mdi-vuejs',
-        value: 80,
+        title: 'React JS',
+        icon : 'mdi-react',
+        value: 40,
       },
       {
         title: 'Angular',
@@ -205,7 +205,7 @@ export default {
         value: 70,
       },
       {
-        title: 'MySQL/SQL-Server/PostgreSQL/Oracle SQL',
+        title: 'SQL-Server/PostgreSQL',
         icon : 'mdi-git',
         value: 70,
       },
@@ -219,32 +219,12 @@ export default {
       //   icon : 'mdi-shield-lock',
       //   value: 80,
       // },
-      {
-        title: 'Test Driven Development',
-        icon : 'mdi-test-tube',
-        value: 30,
-      },
-      {
-        title: 'Continuous Integration / Continuous Delivery',
-        icon : 'mdi-truck-fast',
-        value: 35,
-      },
-      {
-        title: 'Git',
-        icon : 'mdi-git',
-        value: 67,
-      },
-      {
-        title: 'Quasar Framework',
-        icon : 'mdi-code-braces',
-        value: 30,
-      },
       // { divider: true },
-      // {
-      //   title: 'Hardware Development',
-      //   icon : 'mdi-chip',
-      //   value: 29,
-      // },
+      {
+        title: 'Matlab',
+        icon : 'mdi-chip',
+        value: 29,
+      },
       // {
       //   title: 'C/C++',
       //   icon : 'mdi-language-cpp',

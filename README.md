@@ -18,7 +18,7 @@ Vue Modern Resume is basically a simple (yet easy to setup) resume template base
 
 1. Clone this repository.
 ```
-git clone https://github.com/sashin-a/vue-modern-portfolio
+git clone https://github.com/Jay-a/vue-modern-portfolio
 ```
 
 2. Go to the cloned directory (e.g. `cd vue-modern-portfolio`).

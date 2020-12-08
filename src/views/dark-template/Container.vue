@@ -9,7 +9,7 @@
           fluid
           fill-height
         >
-          <github-ribbon />
+         <!-- <github-ribbon />-->
           <v-layout
             align-center
             justify-center
@@ -33,7 +33,7 @@
               <v-layout>
                 <v-flex md12>
                   <timeline-primary />
-                  <timeline-endless />
+                  <!-- <timeline-endless /> -->
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -63,15 +63,15 @@ export default {
   },
   mounted () {
     // eslint-disable-next-line no-unused-vars
-    const line = new LeaderLine(
-      document.getElementById('to-timeline'),
-      document.getElementById('timeline'),
-      {
-        size      : 2,
-        color     : this.$vuetify.theme.primary,
-        startLabel: LeaderLine.captionLabel('To the Journey ...'),
-      }
-    )
+    // const line = new LeaderLine(
+    //   document.getElementById('to-timeline'),
+    //   document.getElementById('timeline'),
+    //   {
+    //     size      : 2,
+    //     color     : this.$vuetify.theme.primary,
+    //     startLabel: LeaderLine.captionLabel('To the Journey ...'),
+    //   }
+    // )
   },
 }
 </script>

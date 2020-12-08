@@ -408,7 +408,7 @@ export default {
         title: 'Created and open sourced this portfolio',
         html : `
           <p>
-              Current status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/sashin-a/vue-modern-portfolio">sashin-a/vue-modern-portfolio</a>
+              Current status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/Jay-a/vue-modern-portfolio">Jay-a/vue-modern-portfolio</a>
           </p>
           <p>
             A Vue.js-based and powered-by-Vuetify (material UI kit) integrated with Google Firebase to deploy and monitor!

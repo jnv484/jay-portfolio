@@ -6,7 +6,7 @@
     >
       <img
         :src="publicPath('/img/avatar.jpg')"
-        alt="Sashin Agrawal"
+        alt="Jay Nayak"
       >
     </v-avatar>
   </div>

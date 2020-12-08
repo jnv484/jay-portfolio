@@ -7,10 +7,10 @@
       <avatar />
       <div class="text-sm-center mb-4 mt-3">
         <h1>
-          Sashin <span class="light-blue--text text--lighten-3">Agrawal</span>
+          Jay <span class="light-blue--text text--lighten-3">Nayak</span>
         </h1>
         <span>
-         Full stack Web developer
+         Software Engineer
         </span>
       </div>
 
@@ -79,27 +79,22 @@ export default {
             {
               name: 'Email',
               icon: 'mdi-email',
-              text: 'sashin.agrawal1@gmail.com',
+              text: 'jayknayak@gmail.com',
             },
             {
               name: 'Contact Number',
               icon: 'mdi-cellphone',
-              text: '+91-7984005427',
+              text: '+1-639-999-6561',
             },
             {
               name: 'Website',
               icon: 'mdi-web',
-              text: 'sashinagrawal.in',
+              text: 'JayKNayak.com',
             },
             {
-              name: 'Birth Date',
-              icon: 'mdi-cake-variant',
-              text: 'Jul 16, 1993',
-            },
-            {
-              name: 'Nationality',
+              name: 'Address',
               icon: 'mdi-map-marker',
-              text: 'Hyderabad, India',
+              text: '16 – 4239 Degeer St, Saskatoon, SK, S7H 4N6',
             },
           ],
         },
@@ -108,23 +103,23 @@ export default {
           items: [
             {
               icon: 'mdi-github-circle',
-              text: 'github.com/Sashin-a',
-              link: 'https://github.com/Sashin-a',
+              text: 'github.com/Jay-a',
+              link: 'https://github.com/Jay-a',
             },
             {
               icon: 'mdi-linkedin-box',
-              text: 'linkedin.com/in/sashin-agrawal',
-              link: 'https://linkedin.com/in/sashin-agrawal',
+              text: 'linkedin.com/in/Jay-Nayak',
+              link: 'https://linkedin.com/in/Jay-Nayak',
             },
             // {
             //   icon: 'mdi-twitter',
-            //   text: 'twitter.com/Sashin Agrawal',
-            //   link: 'https://twitter.com/imSashin',
+            //   text: 'twitter.com/Jay Nayak',
+            //   link: 'https://twitter.com/imJay',
             // },
             {
               icon: 'mdi-instagram',
-              text: 'instagram.com/sashinagrawal',
-              link: 'https://www.instagram.com/sashinagrawal/',
+              text: 'instagram.com/JayNayak',
+              link: 'https://www.instagram.com/JayNayak/',
             },
           ],
         },
