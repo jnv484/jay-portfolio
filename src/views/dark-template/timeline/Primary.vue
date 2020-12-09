@@ -1,8 +1,5 @@
 <template>
-  <v-card
-    color="grey lighten-4"
-    light
-  >
+  <v-card color="grey lighten-4" light>
     <v-card-text>
       <content-section
         id="timeline"
@@ -17,24 +14,17 @@
           </div>
         </template>
 
-        <v-timeline
-          dense
-        >
+        <v-timeline dense>
           <v-timeline-item
             v-for="(item, i) in orderedItems"
             :key="i"
             :icon="item.icon || ''"
-            :class="{transparent: item.transparent}"
+            :class="{ transparent: item.transparent }"
             large
           >
-            <template
-              v-if="item.iconImage"
-              v-slot:icon
-            >
+            <template v-if="item.iconImage" v-slot:icon>
               <v-avatar>
-                <img
-                  :src="publicPath(item.iconImage)"
-                >
+                <img :src="publicPath(item.iconImage)" />
               </v-avatar>
             </template>
             <template v-slot:opposite />
@@ -47,11 +37,7 @@
               >
                 <span>{{ item.year }}</span>
               </v-flex>
-              <v-flex
-                md11
-                sm10
-                xs12
-              >
+              <v-flex md11 sm10 xs12>
                 <v-card class="elevation-1">
                   <v-card-title class="pb-0">
                     <div>
@@ -63,46 +49,34 @@
                   </v-card-title>
                   <v-card-text>
                     <v-layout wrap>
-                      <v-flex
-                        :md7="!!item.image"
-                        :md12="!item.image"
-                        xs12
-                      >
+                      <v-flex :md7="!!item.image" :md12="!item.image" xs12>
                         <div class="mr-1">
-                          <span
-                            v-if="item.text"
-                            class="pre"
-                          >{{ item.text }}</span>
+                          <span v-if="item.text" class="pre">{{
+                            item.text
+                          }}</span>
                           <!-- eslint-disable vue/no-v-html -->
-                          <div
-                            v-else-if="item.html"
-                            v-html="item.html"
-                          />
+                          <div v-else-if="item.html" v-html="item.html" />
                           <!-- eslint-enable vue/no-v-html -->
                         </div>
                       </v-flex>
-                      <v-flex
-                        v-if="item.image"
-                        md5
-                        xs12
-                      >
-                        <div
-                          class="mt-2"
-                        >
+                      <v-flex v-if="item.image" md5 xs12>
+                        <div class="mt-2">
                           <v-carousel
                             v-if="Array.isArray(item.image)"
                             :show-arrows="false"
                             :height="325"
                           >
                             <v-carousel-item
-                              v-for="(citem,ci) in item.image"
+                              v-for="(citem, ci) in item.image"
                               :key="ci"
                               :src="publicPath(citem)"
                             />
                           </v-carousel>
                           <v-img
                             v-else
-                            :max-height="item.imageHeight ? item.imageHeight : ''"
+                            :max-height="
+                              item.imageHeight ? item.imageHeight : ''
+                            "
                             :src="publicPath(item.image)"
                           />
                         </div>
@@ -120,20 +94,21 @@
 </template>
 
 <script>
-import ContentSection from '@/views/dark-template/content/Section'
+import ContentSection from "@/views/dark-template/content/Section";
 export default {
-  name      : 'Timeline',
+  name: "Timeline",
   components: { ContentSection },
-  data      : () => ({
+  data: () => ({
     detailed: false,
-    items   : [
+    items: [
       {
-        detailed   : true,
+        detailed: true,
         transparent: true,
-        year       : '1993',
-        title      : 'Born on July 16, 1993',
-        html       : 'With a chance of %0.00000000000512.<br>I\'m completely aware of value of the life!',
-        icon       : 'mdi-cake-variant',
+        year: "1993",
+        title: "Born on July 16, 1993",
+        html:
+          "With a chance of %0.00000000000512.<br>I'm completely aware of value of the life!",
+        icon: "mdi-cake-variant",
       },
       // {
       //   detailed   : true,
@@ -348,9 +323,9 @@ export default {
       //   iconImage: 'img/timeline/delix.ir-icon.png',
       // },
       {
-        year : '2016',
-        title: 'Work in progress',
-        html : `
+        year: "2016",
+        title: "Work in progress",
+        html: `
           <p>
               Work in Progress
           </p>
@@ -358,13 +333,13 @@ export default {
             Work in Progress
           </p>
         `,
-        image: 'img/timeline/Bayer.png',
-        iconImage : 'img/timeline/tcs.png',
+        image: "img/timeline/Bayer.png",
+        iconImage: "img/timeline/tcs.png",
       },
       {
-        year : '2017',
-        title: 'Work in progress',
-        html : `
+        year: "2017",
+        title: "Work in progress",
+        html: `
           <p>
               Work in Progress
           </p>
@@ -372,13 +347,13 @@ export default {
             Work in Progress
           </p>
         `,
-        image: 'img/timeline/weatherford.png',
-        iconImage : 'img/timeline/tcs.png',
+        image: "img/timeline/weatherford.png",
+        iconImage: "img/timeline/tcs.png",
       },
       {
-        year : '2019',
-        title: 'Work in progress',
-        html : `
+        year: "2019",
+        title: "Work in progress",
+        html: `
           <p>
               Work in Progress
           </p>
@@ -386,13 +361,13 @@ export default {
             Work in Progress
           </p>
         `,
-        image: 'img/timeline/wincanton.png',
-        iconImage : 'img/timeline/tcs.png',
+        image: "img/timeline/wincanton.png",
+        iconImage: "img/timeline/tcs.png",
       },
       {
-        year : '2020',
-        title: 'Work in progress',
-        html : `
+        year: "2020",
+        title: "Work in progress",
+        html: `
           <p>
               Work in Progress
           </p>
@@ -400,13 +375,13 @@ export default {
             Work in Progress
           </p>
         `,
-        image: '',
-        icon : 'mdi-github-circle',
+        image: "",
+        icon: "mdi-github-circle",
       },
       {
-        year : '2020',
-        title: 'Created and open sourced this portfolio',
-        html : `
+        year: "2020",
+        title: "Created and open sourced this portfolio",
+        html: `
           <p>
               Current status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/Jay-a/vue-modern-portfolio">Jay-a/vue-modern-portfolio</a>
           </p>
@@ -414,13 +389,13 @@ export default {
             A Vue.js-based and powered-by-Vuetify (material UI kit) integrated with Google Firebase to deploy and monitor!
           </p>
         `,
-        image: 'img/timeline/my-portfolio.jpg',
-        icon : 'mdi-github-circle',
+        image: "img/timeline/my-portfolio.jpg",
+        icon: "mdi-github-circle",
       },
       {
-        year : '2020',
-        title: 'Cognizant - Full stack development',
-        html : `
+        year: "2020",
+        title: "Cognizant - Full stack development",
+        html: `
           <p>
               Completed Full Stack Engineer certification as per the client norms.
           </p>
@@ -433,8 +408,8 @@ export default {
             </ul>
           </p>
         `,
-        image    : 'img/timeline/CCC.png',
-        iconImage: 'img/timeline/cognizant.png',
+        image: "img/timeline/CCC.png",
+        iconImage: "img/timeline/cognizant.png",
       },
       // {
       //   year : 'So far ...',
@@ -446,16 +421,15 @@ export default {
     ],
   }),
   computed: {
-    orderedItems () {
-      const items = [...this.items].reverse()
-      if (this.detailed)
-        return items
+    orderedItems() {
+      const items = [...this.items].reverse();
+      if (this.detailed) return items;
       return items.filter((item) => {
-        return !item.detailed
-      })
+        return !item.detailed;
+      });
     },
   },
-}
+};
 </script>
 
 <style scoped>
@@ -466,7 +440,7 @@ export default {
 .pre {
   white-space: pre;
 }
-.transparent{
+.transparent {
   opacity: 0.6;
 }
 </style>
