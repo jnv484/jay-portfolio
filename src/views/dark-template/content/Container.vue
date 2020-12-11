@@ -47,10 +47,10 @@
               v-if="!employment.divider"
               :key="i"
             >
-              <v-flex md4>
+              <v-flex md6>
                 {{ employment.from }} - {{ employment.to }}
               </v-flex>
-              <v-flex md8>
+              <v-flex md10>
                 <strong v-if="employment.title">{{ employment.title }}</strong>
                 <div v-if="employment.location">
                   <i>{{ employment.location }}</i>
@@ -64,9 +64,9 @@
             <v-flex
               v-if="employment.divider"
               :key="i"
-              md12
-              xs12
+              md1
               mb-4
+              xs12
             />
           </template>
         </v-layout>
@@ -149,10 +149,10 @@
               v-if="!education.divider"
               :key="i"
             >
-              <v-flex md4>
+              <v-flex md6>
                 {{ education.from }} - {{ education.to }}
               </v-flex>
-              <v-flex md8>
+              <v-flex md12>
                 <strong v-if="education.title">{{ education.title }}</strong>
                 <div v-if="education.location">
                   <i>{{ education.location }}</i>
