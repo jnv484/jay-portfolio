@@ -5,9 +5,7 @@
       <div class="text-sm-center mb-4 mt-3">
         <h1>
           <!-- Jay <span class="light-blue--text text--lighten-3">Nayak</span> -->
-          <span class="light-blue--text text--lighten-3"
-            >Jay Nayak <small>(MASc)</small></span
-          >
+          <span class="light-blue--text text--lighten-2">Jay Nayak, MASc</span>
         </h1>
         <span>
           Software Engineer | Cybersecurity Researcher
@@ -19,16 +17,16 @@
       <sidebar-section :options="sections.interests">
         <template v-slot:item="{ item }">
           <v-chip>
-            <v-avatar>
-              <v-icon>
+            <!-- <v-avatar> -->
+              <!-- <v-icon>
                 {{ item.icon }}
-              </v-icon>
-            </v-avatar>
+              </v-icon> -->
+            <!-- </v-avatar> -->
             {{ item.text }}
           </v-chip>
         </template>
       </sidebar-section>
-      <sidebar-section :options="sections.languages">
+      <!-- <sidebar-section :options="sections.languages">
         <template v-slot:items="{ items }">
           <v-container pa-0>
             <v-layout wrap class="text-xs-center">
@@ -49,7 +47,8 @@
             </v-layout>
           </v-container>
         </template>
-      </sidebar-section>
+      </sidebar-section> -->
+      <sidebar-section :options="sections.additional" />
     </v-card-text>
   </v-card>
 </template>
@@ -76,11 +75,11 @@ export default {
               icon: "mdi-cellphone",
               text: "+1 639-999-6561",
             },
-            {
-              name: "Website",
-              icon: "mdi-web",
-              text: "jayknayak.com",
-            },
+            // {
+            //   name: "Website",
+            //   icon: "mdi-web",
+            //   text: "jayknayak.com",
+            // },
             {
               name: "Resume",
               icon: "mdi-text",
@@ -183,19 +182,40 @@ export default {
             //},
           ],
         },
-        //        languages: {
-        //         title: "LANGUAGES",
-        //        items: [
-        //         {
-        //          text: "Hindi",
-        //        value: 100,
-        //    },
-        //   {
-        //    text: "English",
-        //   value: 90,
+        // languages: {
+        //   title: "LANGUAGES",
+        //   items: [
+        //     {
+        //       text: "Hindi",
+        //       value: 100,
+        //     },
+        //     {
+        //       text: "English",
+        //       value: 90,
+        //     },
+        //   ],
         // },
-        //],
-        //},
+        additional: {
+          title: "ADDITIONAL EXPERIENCE AND ACCOLADES",
+          items: [
+            {
+              text: "•	 Mentoring junior software engineers in TCS, India.",
+            },
+            {
+              text: "•	‘On The Spot Award’ (Award for Excellence) in TCS for successfully developing a project in a very crucial deadline.",
+            },
+            {
+              text: "•	Graduate Teaching Assistant at University of Regina, SK, Canada (2019 – 2020).",
+            },
+            {
+              text: "•	The Saskatchewan Innovation and Excellence Graduate Scholarship, SK, Canada (twice).",
+            },
+            {
+              text: "•	Master’s Award, University of Regina, SK, Canada.",
+            },
+            
+          ],
+        },
       },
     };
   },
