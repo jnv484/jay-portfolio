@@ -57,7 +57,7 @@
           <template v-for="(skill, i) in skills">
             <v-flex v-if="skill.divider" :key="i" md12 xs12 mb-4 />
             <v-flex v-else :key="i" md6 xs12>
-              <div class="mr-2 ml-2">
+              <div class="mr-3 ml-2">
                 <div class="align-center">
                   <v-icon small>
                     {{ skill.icon }}
@@ -76,20 +76,36 @@
         </v-layout>
       </content-section>
 
-      <content-section v-if="tools" title="Tools I am familiar with!">
-        <v-layout v-for="(tool, i) in tools" :key="i">
-          <v-flex md1 xs3>
-            <v-icon right>
-              {{ tool.icon }}
-            </v-icon>
-          </v-flex>
-          <v-flex md11 xs9>
-            <p>
-              <strong>{{ tool.text }}</strong
-              ><br />
-              <small>{{ tool.source }}</small>
-            </p>
-          </v-flex>
+      <content-section
+        v-if="tools"
+        id="to-timeline"
+        title="Tools I am familiar with"
+      >
+        <v-layout wrap>
+          <template
+            v-for="(tool, i) in tools"
+          >
+           
+            <v-flex
+              
+              :key="i"
+              md4
+              sm4
+              xs12
+            >
+              <div
+                class="mr-3 ml-3"
+              >
+                <div class="align-center">
+                  <ul>
+                    <li>{{ tool.text }}</li>
+                  </ul>
+                  
+                </div>
+                
+              </div>
+            </v-flex>
+          </template>
         </v-layout>
       </content-section>
 
@@ -163,7 +179,7 @@ export default {
       },
       {
         title: "Spring Boot",
-        icon: "mdi-language-",
+        icon: "mdi-code-braces",
         value: 70,
       },
       {
@@ -173,12 +189,12 @@ export default {
       },
       {
         title: "MySQL / PostgreSQL",
-        icon: "mdi-",
+        icon: "mdi-code-braces",
         value: 85,
       },
       {
         title: "Zk",
-        icon: "mdi-",
+        icon: "mdi-code-braces",
         value: 82,
       },
       {
