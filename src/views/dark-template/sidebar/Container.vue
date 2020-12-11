@@ -83,7 +83,8 @@ export default {
             {
               name: "Resume",
               icon: "mdi-text",
-              text: "{Add suburl here}",
+              file: "static/JayNayak.docx",
+              text: "Save My Resume"
             },
             {
               name: "Address",

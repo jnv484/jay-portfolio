@@ -24,6 +24,14 @@
         >
           {{ item.text }}
         </a>
+               <a
+          v-else-if="item.file"
+          class="grey--text"
+          :href="item.file"
+          download
+        >
+          {{ item.text }}
+        </a>
         <span
           v-else
           class="grey--text"
