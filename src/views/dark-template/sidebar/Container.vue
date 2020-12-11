@@ -1,5 +1,8 @@
 <template>
-  <v-card color="grey darken-3" dark>
+  <v-card
+    color="grey darken-3"
+    dark
+  >
     <v-card-text>
       <avatar />
       <div class="text-sm-center mb-4 mt-3">
@@ -18,7 +21,7 @@
         <template v-slot:item="{ item }">
           <v-chip>
             <!-- <v-avatar> -->
-              <!-- <v-icon>
+            <!-- <v-icon>
                 {{ item.icon }}
               </v-icon> -->
             <!-- </v-avatar> -->
@@ -54,26 +57,26 @@
 </template>
 
 <script>
-import Avatar from "@/views/dark-template/sidebar/Avatar";
-import SidebarSection from "@/views/dark-template/sidebar/Section";
+import Avatar from '@/views/dark-template/sidebar/Avatar'
+import SidebarSection from '@/views/dark-template/sidebar/Section'
 export default {
-  name: "Sidebar",
+  name      : 'Sidebar',
   components: { SidebarSection, Avatar },
-  data() {
+  data () {
     return {
       sections: {
         info: {
-          title: "INFO",
+          title: 'INFO',
           items: [
             {
-              name: "Email",
-              icon: "mdi-email",
-              text: "jayknayak@gmail.com",
+              name: 'Email',
+              icon: 'mdi-email',
+              text: 'jayknayak@gmail.com',
             },
             {
-              name: "Contact Number",
-              icon: "mdi-cellphone",
-              text: "+1 639-999-6561",
+              name: 'Contact Number',
+              icon: 'mdi-cellphone',
+              text: '+1 639-999-6561',
             },
             // {
             //   name: "Website",
@@ -81,20 +84,20 @@ export default {
             //   text: "jayknayak.com",
             // },
             {
-              name: "Resume",
-              icon: "mdi-text",
-              file: "static/JayNayak.docx",
-              text: "Save My Resume"
+              name: 'Resume',
+              icon: 'mdi-text',
+              file: 'static/JayNayak.docx',
+              text: 'Save My Resume',
             },
             {
-              name: "Address",
-              icon: "mdi-map-marker",
-              text: "16 – 4239 Degeer St, Saskatoon, SK, S7H 4N6",
+              name: 'Address',
+              icon: 'mdi-map-marker',
+              text: '16 – 4239 Degeer St, Saskatoon, SK, S7H 4N6',
             },
           ],
         },
         socials: {
-          title: "SOCIALS",
+          title: 'SOCIALS',
           items: [
             //  {
             //    icon: "mdi-github-circle",
@@ -102,9 +105,9 @@ export default {
             //    link: "https://github.com/Jay-a",
             //  },
             {
-              icon: "mdi-linkedin-box",
-              text: "linkedin.com/in/jayknayak",
-              link: "https://www.linkedin.com/in/jayknayak/",
+              icon: 'mdi-linkedin-box',
+              text: 'linkedin.com/in/jayknayak',
+              link: 'https://www.linkedin.com/in/jayknayak/',
             },
             // {
             //   icon: 'mdi-twitter',
@@ -112,43 +115,43 @@ export default {
             //   link: 'https://twitter.com/imJay',
             // },
             {
-              icon: "mdi-twitter",
-              text: "@jayknayak",
-              link: "https://twitter.com/jayknayak",
+              icon: 'mdi-twitter',
+              text: '@jayknayak',
+              link: 'https://twitter.com/jayknayak',
             },
           ],
         },
         interests: {
-          title: "INTERESTS",
+          title: 'INTERESTS',
           items: [
             {
-              icon: "mdi-auto-fix",
-              text: "Cybersecurity",
+              icon: 'mdi-auto-fix',
+              text: 'Cybersecurity',
             },
             {
-              icon: "mdi-auto-fix",
-              text: "Programming",
+              icon: 'mdi-auto-fix',
+              text: 'Programming',
             },
             {
-              icon: "mdi-auto-fix",
-              text: "Aritificial Intelligence (AI)",
+              icon: 'mdi-auto-fix',
+              text: 'Aritificial Intelligence (AI)',
             },
             {
-              icon: "mdi-auto-fix",
-              text: "Cosmos",
+              icon: 'mdi-auto-fix',
+              text: 'Cosmos',
             },
             {
-              icon: "mdi-auto-fix",
-              text: "Continuous Self-development",
+              icon: 'mdi-auto-fix',
+              text: 'Continuous Self-development',
             },
             // {
             //   icon: 'mdi-biohazard',
             //   text: 'Challenges',
             // },
-            //{
+            // {
             // icon: "mdi-bike",
-            //text: "Cycling",
-            //},
+            // text: "Cycling",
+            // },
             // {
             //   icon: 'mdi-image-filter-hdr',
             //   text: 'Nature',
@@ -157,30 +160,30 @@ export default {
             //   icon: 'mdi-auto-fix',
             //   text: 'Hacking Stuffs',
             // },
-            //{
+            // {
             // icon: "mdi-teach",
-            //text: "Teaching",
-            //},
+            // text: "Teaching",
+            // },
             // {
             //   icon: 'mdi-karate',
             //   text: 'Sports',
             // },
-            //{
+            // {
             // icon: "mdi-music",
-            //text: "Music",
-            //},
+            // text: "Music",
+            // },
             // {
             //   icon: 'mdi-account-group',
             //   text: 'Leadership',
             // },
-            //{
+            // {
             // icon: "mdi-book-open-page-variant",
-            //text: "Books",
-            //},
-            //{
+            // text: "Books",
+            // },
+            // {
             //  icon: "mdi-android-debug-bridge",
             //  text: "Tickling Bugs!",
-            //},
+            // },
           ],
         },
         // languages: {
@@ -197,30 +200,21 @@ export default {
         //   ],
         // },
         additional: {
-          title: "ADDITIONAL EXPERIENCE AND ACCOLADES",
+          title: 'ADDITIONAL EXPERIENCE AND ACCOLADES',
+          type : 'awards',
           items: [
-            {
-              text: "•	 Mentoring junior software engineers in TCS, India.",
-            },
-            {
-              text: "•	‘On The Spot Award’ (Award for Excellence) in TCS for successfully developing a project in a very crucial deadline.",
-            },
-            {
-              text: "•	Graduate Teaching Assistant at University of Regina, SK, Canada (2019 – 2020).",
-            },
-            {
-              text: "•	The Saskatchewan Innovation and Excellence Graduate Scholarship, SK, Canada (twice).",
-            },
-            {
-              text: "•	Master’s Award, University of Regina, SK, Canada.",
-            },
-            
+            { text: 'Mentoring junior software engineers in TCS, India.' },
+            { text: '‘On The Spot Award’ (Award for Excellence) in TCS for successfully developing a project in a very crucial deadline.' },
+            { text: 'Graduate Teaching Assistant at University of Regina, SK, Canada (2019 – 2020).' },
+            { text: 'The Saskatchewan Innovation and Excellence Graduate Scholarship, SK, Canada (twice).' },
+            { text: 'Master’s Award, University of Regina, SK, Canada.' },
+
           ],
         },
       },
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped>

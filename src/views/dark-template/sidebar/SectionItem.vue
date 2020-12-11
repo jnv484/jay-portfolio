@@ -24,7 +24,7 @@
         >
           {{ item.text }}
         </a>
-               <a
+        <a
           v-else-if="item.file"
           class="grey--text"
           :href="item.file"
@@ -32,6 +32,7 @@
         >
           {{ item.text }}
         </a>
+
         <span
           v-else
           class="grey--text"
