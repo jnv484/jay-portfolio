@@ -41,22 +41,34 @@
         v-if="employments"
         title="Employment"
       >
-        <v-layout
-          v-for="(employment, i) in employments"
-          :key="i"
-        >
-          <v-flex md4>
-            {{ employment.from }} - {{ employment.to }}
-          </v-flex>
-          <v-flex md8>
-            <strong v-if="employment.title">{{ employment.title }}</strong>
-            <div v-if="employment.location">
-              <i>{{ employment.location }}</i>
-            </div>
-            <div v-if="employment.description">
-              {{ employment.description }}
-            </div>
-          </v-flex>
+        <v-layout wrap>
+          <template v-for="(employment, i) in employments">
+            <v-flex
+              v-if="!employment.divider"
+              :key="i"
+            >
+              <v-flex md4>
+                {{ employment.from }} - {{ employment.to }}
+              </v-flex>
+              <v-flex md8>
+                <strong v-if="employment.title">{{ employment.title }}</strong>
+                <div v-if="employment.location">
+                  <i>{{ employment.location }}</i>
+                </div>
+                <div v-if="employment.description">
+                  {{ employment.description }}
+                </div>
+              </v-flex>
+            </v-flex>
+
+            <v-flex
+              v-if="employment.divider"
+              :key="i"
+              md12
+              xs12
+              mb-4
+            />
+          </template>
         </v-layout>
       </content-section>
 
@@ -108,19 +120,14 @@
         title="Tools I am familiar with"
       >
         <v-layout wrap>
-          <template
-            v-for="(tool, i) in tools"
-          >
+          <template v-for="(tool, i) in tools">
             <v-flex
-
               :key="i"
               md4
               sm4
-              xs12
+              xs6
             >
-              <div
-                class="mr-3 ml-3"
-              >
+              <div class="mr-3 ml-3">
                 <div class="align-center">
                   <ul>
                     <li>{{ tool.text }}</li>
@@ -136,22 +143,33 @@
         v-if="educations"
         title="Education"
       >
-        <v-layout
-          v-for="(education, i) in educations"
-          :key="i"
-        >
-          <v-flex md4>
-            {{ education.from }} - {{ education.to }}
-          </v-flex>
-          <v-flex md8>
-            <strong v-if="education.title">{{ education.title }}</strong>
-            <div v-if="education.location">
-              <i>{{ education.location }}</i>
-            </div>
-            <div v-if="education.description">
-              {{ education.description }}
-            </div>
-          </v-flex>
+        <v-layout wrap>
+          <template v-for="(education, i) in educations">
+            <v-flex
+              v-if="!education.divider"
+              :key="i"
+            >
+              <v-flex md4>
+                {{ education.from }} - {{ education.to }}
+              </v-flex>
+              <v-flex md8>
+                <strong v-if="education.title">{{ education.title }}</strong>
+                <div v-if="education.location">
+                  <i>{{ education.location }}</i>
+                </div>
+                <div v-if="education.description">
+                  {{ education.description }}
+                </div>
+              </v-flex>
+            </v-flex>
+            <v-flex
+              v-if="education.divider"
+              :key="i"
+              md12
+              xs12
+              mb-4
+            />
+          </template>
         </v-layout>
       </content-section>
     </v-card-text>
@@ -169,15 +187,16 @@ export default {
         from       : '01/2019',
         to         : '12/2020',
         title      : 'Cybersecurity Researcher',
-        location   : 'University of Regina, Regina, SK, Canada',
-        description: '',
+        location   : 'University of Regina',
+        description: 'Regina, SK, Canada',
       },
+      { divider: true },
       {
         from       : '11/2015',
         to         : '07/2018',
         title      : 'Software Development Engineer',
-        location   : 'Tata Consultancy Services Ltd. (TCS), Ahmedabad, India',
-        description: '',
+        location   : 'Tata Consultancy Services Ltd. (TCS)',
+        description: ' Ahmedabad, India',
       },
     ],
     educations: [
@@ -189,6 +208,7 @@ export default {
         location: 'University of Regina, Regina, SK, Canada',
         // description: "",
       },
+      { divider: true },
       {
         from    : '2011',
         to      : '2015',
@@ -196,6 +216,7 @@ export default {
         location: 'Nirma University, Ahmedabad, India',
         // description: "",
       },
+      { divider: true },
     ],
     skills: [
       {
