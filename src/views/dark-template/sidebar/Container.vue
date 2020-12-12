@@ -1,8 +1,5 @@
 <template>
-  <v-card
-    color="grey darken-3"
-    dark
-  >
+  <v-card color="grey darken-3" dark>
     <v-card-text>
       <avatar />
       <div class="text-sm-center mb-4 mt-3">
@@ -10,9 +7,7 @@
           <!-- Jay <span class="light-blue--text text--lighten-3">Nayak</span> -->
           <span class="light-blue--text text--lighten-2">Jay Nayak, MASc</span>
         </h1>
-        <span>
-          Software Engineer | Cybersecurity Researcher
-        </span>
+        <span> Software Engineer | Cybersecurity Researcher </span>
       </div>
 
       <sidebar-section :options="sections.info" />
@@ -29,15 +24,17 @@
           </v-chip>
         </template>
       </sidebar-section>
-      <!-- <sidebar-section :options="sections.languages">
+
+      <sidebar-section :options="sections.additional" />
+      <sidebar-section :options="sections.languages">
         <template v-slot:items="{ items }">
           <v-container pa-0>
             <v-layout wrap class="text-xs-center">
               <template v-for="(item, i) in items">
-                <v-flex :key="i" md3 sm4 xs6>
+                <v-flex :key="i" md4 sm4 xs6>
                   <v-progress-circular
                     rotate="360"
-                    size="65"
+                    size="100"
                     width="2"
                     :value="item.value"
                     color="white"
@@ -50,33 +47,32 @@
             </v-layout>
           </v-container>
         </template>
-      </sidebar-section> -->
-      <sidebar-section :options="sections.additional" />
+      </sidebar-section>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-import Avatar from '@/views/dark-template/sidebar/Avatar'
-import SidebarSection from '@/views/dark-template/sidebar/Section'
+import Avatar from "@/views/dark-template/sidebar/Avatar";
+import SidebarSection from "@/views/dark-template/sidebar/Section";
 export default {
-  name      : 'Sidebar',
+  name: "Sidebar",
   components: { SidebarSection, Avatar },
-  data () {
+  data() {
     return {
       sections: {
         info: {
-          title: 'INFO',
+          title: "INFO",
           items: [
             {
-              name: 'Email',
-              icon: 'mdi-email',
-              text: 'jayknayak@gmail.com',
+              name: "Email",
+              icon: "mdi-email",
+              text: "jayknayak@gmail.com",
             },
             {
-              name: 'Contact Number',
-              icon: 'mdi-cellphone',
-              text: '+1 639-999-6561',
+              name: "Contact Number",
+              icon: "mdi-cellphone",
+              text: "+1 639-999-6561",
             },
             // {
             //   name: "Website",
@@ -84,20 +80,20 @@ export default {
             //   text: "jayknayak.com",
             // },
             {
-              name: 'Resume',
-              icon: 'mdi-text',
-              file: 'static/JayNayak.docx',
-              text: 'Save My Resume',
+              name: "Resume",
+              icon: "mdi-text",
+              file: "static/Resume_JayNayak.docx",
+              text: "Save My Resume",
             },
             {
-              name: 'Address',
-              icon: 'mdi-map-marker',
-              text: '16 – 4239 Degeer St, Saskatoon, SK, S7H 4N6',
+              name: "Address",
+              icon: "mdi-map-marker",
+              text: "16 – 4239 Degeer St, Saskatoon, SK, S7H 4N6",
             },
           ],
         },
         socials: {
-          title: 'SOCIALS',
+          title: "SOCIALS",
           items: [
             //  {
             //    icon: "mdi-github-circle",
@@ -105,44 +101,44 @@ export default {
             //    link: "https://github.com/Jay-a",
             //  },
             {
-              icon: 'mdi-linkedin-box',
-              text: 'linkedin.com/in/jayknayak',
-              link: 'https://www.linkedin.com/in/jayknayak/',
+              icon: "mdi-linkedin-box",
+              text: "linkedin.com/in/JayNayak",
+              link: "https://www.linkedin.com/in/jayknayak/",
             },
-            // {
-            //   icon: 'mdi-twitter',
-            //   text: 'twitter.com/Jay Nayak',
-            //   link: 'https://twitter.com/imJay',
-            // },
             {
-              icon: 'mdi-twitter',
-              text: '@jayknayak',
-              link: 'https://twitter.com/jayknayak',
+              icon: "mdi-twitter",
+              text: "twitter.com/JayNayak",
+              link: "https://twitter.com/jayknayak",
+            },
+            {
+              icon: "mdi-instagram",
+              text: "instagram.com/JayNayak",
+              link: "https://instagram.com/jayknayak",
             },
           ],
         },
         interests: {
-          title: 'INTERESTS',
+          title: "INTERESTS",
           items: [
             {
-              icon: 'mdi-auto-fix',
-              text: 'Cybersecurity',
+              icon: "mdi-auto-fix",
+              text: "Programming",
             },
             {
-              icon: 'mdi-auto-fix',
-              text: 'Programming',
+              icon: "mdi-auto-fix",
+              text: "Cybersecurity",
             },
             {
-              icon: 'mdi-auto-fix',
-              text: 'Aritificial Intelligence (AI)',
+              icon: "mdi-auto-fix",
+              text: "Aritificial Intelligence (AI)",
             },
             {
-              icon: 'mdi-auto-fix',
-              text: 'Cosmos',
+              icon: "mdi-auto-fix",
+              text: "Cosmos",
             },
             {
-              icon: 'mdi-auto-fix',
-              text: 'Continuous Self-development',
+              icon: "mdi-auto-fix",
+              text: "Continuous Self-development",
             },
             // {
             //   icon: 'mdi-biohazard',
@@ -186,35 +182,45 @@ export default {
             // },
           ],
         },
-        // languages: {
-        //   title: "LANGUAGES",
-        //   items: [
-        //     {
-        //       text: "Hindi",
-        //       value: 100,
-        //     },
-        //     {
-        //       text: "English",
-        //       value: 90,
-        //     },
-        //   ],
-        // },
-        additional: {
-          title: 'ADDITIONAL EXPERIENCE AND ACCOLADES',
-          type : 'awards',
-          items: [
-            { text: 'Mentoring junior software engineers in TCS, India.' },
-            { text: '‘On The Spot Award’ (Award for Excellence) in TCS for successfully developing a project in a very crucial deadline.' },
-            { text: 'Graduate Teaching Assistant at University of Regina, SK, Canada (2019 – 2020).' },
-            { text: 'The Saskatchewan Innovation and Excellence Graduate Scholarship, SK, Canada (twice).' },
-            { text: 'Master’s Award, University of Regina, SK, Canada.' },
 
+        additional: {
+          title: "ACCOLADES",
+          type: "awards",
+          items: [
+            // { text: 'Mentoring junior software engineers in TCS, India.' },
+            {
+              text:
+                "‘On The Spot Award’ (Award for Excellence) in TCS for successfully developing a project in a very crucial deadline.",
+            },
+            // { text: 'Graduate Teaching Assistant at University of Regina, SK, Canada (2019 – 2020).' },
+            {
+              text:
+                "The Saskatchewan Innovation and Excellence Graduate Scholarship, SK, Canada (twice).",
+            },
+            { text: "Master’s Award, University of Regina, SK, Canada." },
+          ],
+        },
+        languages: {
+          title: "LANGUAGES",
+          items: [
+            {
+              text: "English",
+              value: 90,
+            },
+            {
+              text: "Hindi",
+              value: 100,
+            },
+            {
+              text: "Gujarati",
+              value: 100,
+            },
           ],
         },
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style scoped>

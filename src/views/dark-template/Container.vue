@@ -1,32 +1,16 @@
 <template>
   <v-app id="dark-template">
-    <v-fade-transition
-      mode="out-in"
-      type="animation"
-    >
+    <v-fade-transition mode="out-in" type="animation">
       <v-content>
-        <v-container
-          fluid
-          fill-height
-        >
-         <!-- <github-ribbon />-->
-          <v-layout
-            align-center
-            justify-center
-          >
-            <v-flex
-              md10
-              sm12
-            >
+        <v-container fluid fill-height>
+          <!-- <github-ribbon />-->
+          <v-layout align-center justify-center>
+            <v-flex md10 sm12>
               <v-layout wrap>
-                <v-flex
-                  md4
-                >
+                <v-flex md4>
                   <sidebar-container class="fill-height" />
                 </v-flex>
-                <v-flex
-                  md8
-                >
+                <v-flex md8>
                   <content-container class="fill-height" />
                 </v-flex>
               </v-layout>
@@ -45,15 +29,15 @@
 </template>
 
 <script>
-import SidebarContainer from '@/views/dark-template/sidebar/Container'
-import ContentContainer from '@/views/dark-template/content/Container'
-import TimelinePrimary from '@/views/dark-template/timeline/Primary'
-import TimelineEndless from '@/views/dark-template/timeline/Endless'
-import LeaderLine from 'leader-line'
-import GithubRibbon from '@/views/dark-template/GithubRibbon'
+import SidebarContainer from "@/views/dark-template/sidebar/Container";
+import ContentContainer from "@/views/dark-template/content/Container";
+import TimelinePrimary from "@/views/dark-template/timeline/Primary";
+import TimelineEndless from "@/views/dark-template/timeline/Endless";
+import LeaderLine from "leader-line";
+import GithubRibbon from "@/views/dark-template/GithubRibbon";
 
 export default {
-  name      : 'DarkTemplateContainer',
+  name: "DarkTemplateContainer",
   components: {
     GithubRibbon,
     TimelineEndless,
@@ -61,7 +45,7 @@ export default {
     ContentContainer,
     SidebarContainer,
   },
-  mounted () {
+  mounted() {
     // eslint-disable-next-line no-unused-vars
     // const line = new LeaderLine(
     //   document.getElementById('to-timeline'),
@@ -73,7 +57,7 @@ export default {
     //   }
     // )
   },
-}
+};
 </script>
 
 <style scoped>

@@ -3,16 +3,16 @@
     <v-card-text>
       <content-section
         id="timeline"
-        :title="detailed ? 'My Life in a Nutshell' : 'My Experiences'"
+        :title="detailed ? 'Research & Projects' : 'My Experiences'"
       >
-        <template slot="actions">
+        <!-- <template slot="actions">
           <div>
             <v-switch
               v-model="detailed"
               :label="detailed ? 'Detailed' : 'Summary'"
             />
           </div>
-        </template>
+        </template> -->
 
         <v-timeline dense>
           <v-timeline-item
@@ -324,92 +324,112 @@ export default {
       // },
       {
         year: "2016",
-        title: "Work in progress",
+        title: "Report to Record (R2R) - Month End",
         html: `
           <p>
-              Work in Progress
+          Development of month-end application using object-oriented design and programming concepts delivering following features:
+              <ul>
+                <li>Creating and scheduling monthly business activities/tasks</li>
+                <li>Designate the monthly tasks, establish a workflow hierarchy and approval cycle for every activity</li>
+                <li>Alerts and custom reminders for task assignments and task deadlines to the stakeholders via emails or internal notification system</li>
+                <li>Produce month-end statistics reports to verify and track company's business activities and inform management and investors</li>
+            </ul>
           </p>
           <p>
-            Work in Progress
-          </p>
-        `,
-        image: "img/timeline/Bayer.png",
-        iconImage: "img/timeline/tcs.png",
-      },
-      {
-        year: "2017",
-        title: "Work in progress",
-        html: `
-          <p>
-              Work in Progress
-          </p>
-          <p>
-            Work in Progress
+         Development of the R2R - Month End module and successful implementation in a crucial deadline helped the project team attract its first client.
           </p>
         `,
         image: "img/timeline/weatherford.png",
         iconImage: "img/timeline/tcs.png",
       },
       {
-        year: "2019",
-        title: "Work in progress",
+        year: "2017",
+        title: "Contract Management System",
         html: `
           <p>
-              Work in Progress
+              Designed and developed UI screens, backend service architecture, and database for contract creation mechanism between a buyer and a vendor, along with mechanisms for its amendments and approval process.
           </p>
           <p>
-            Work in Progress
+            Rest API calls to allow file transfers between buyers and vendors in the client-server system.
+          </p>
+          <p>
+            Module Owner, Team leader, managing a team of 4-5 software developers. Mentoring junior developers.
+          </p>
+          <p>
+          Managing tasks allocations and task deadlines among team members, collaborating with cross-functional development teams, management, and business team to ensure successful and timely deliveries.
           </p>
         `,
-        image: "img/timeline/wincanton.png",
+        image: "img/timeline/manpower.png",
         iconImage: "img/timeline/tcs.png",
       },
       {
-        year: "2020",
-        title: "Work in progress",
+        year: "2018",
+        title: "Invoice Management System",
         html: `
           <p>
-              Work in Progress
+              Designed and developed invoice creation, amendments and approvals features. Along with its own dynamic workflow management system.
           </p>
           <p>
-            Work in Progress
-          </p>
-        `,
-        image: "",
-        icon: "mdi-github-circle",
-      },
-      {
-        year: "2020",
-        title: "Created and open sourced this portfolio",
-        html: `
-          <p>
-              Current status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/Jay-a/vue-modern-portfolio">Jay-a/vue-modern-portfolio</a>
-          </p>
-          <p>
-            A Vue.js-based and powered-by-Vuetify (material UI kit) integrated with Google Firebase to deploy and monitor!
-          </p>
-        `,
-        image: "img/timeline/my-portfolio.jpg",
-        icon: "mdi-github-circle",
-      },
-      {
-        year: "2020",
-        title: "Cognizant - Full stack development",
-        html: `
-          <p>
-              Completed Full Stack Engineer certification as per the client norms.
-          </p>
-          <p>
-            Indugled in web development for mobile/desktop application of following types : 
+            Created a resuable component to allow the developers easily create UI screens:
             <ul>
-                <li>Mobile application to create claims, estimate damages (Smart Estimate) based on ML integration, based on Vuejs powered with Quasar framework for native browsing experience</li>
-                <li>Developed portal application for admin management to upload data within the system integrated with the salesforce through Apache Kafka.</li>
-                <li>Implemented backend services based on microservices with Eureka Server(s), Discovery client, Netflix zuul server.</li>
-            </ul>
+            <li>
+            Developers could create entire UI screens simply by running a few database scripts.
+            </li>
+            <li>
+            It saved a lot of coding efforts and the testing overhead for the developers. 
+            </li>
+            <li>
+            Later, I had scaled up this component to be compatible with configuring UIs of different business logics.
+            </li>
           </p>
         `,
-        image: "img/timeline/CCC.png",
-        iconImage: "img/timeline/cognizant.png",
+        image: "img/timeline/tgb.png",
+        iconImage: "img/timeline/tcs.png",
+      },
+      // {
+      //   year: "2020",
+      //   title: "Work in progress",
+      //   html: `
+      //     <p>
+      //         Work in Progress
+      //     </p>
+      //     <p>
+      //       Work in Progress
+      //     </p>
+      //   `,
+      //   image: "",
+      //   icon: "mdi-github-circle",
+      // },
+      // {
+      //   year: "2020",
+      //   title: "Created and open sourced this portfolio",
+      //   html: `
+      //     <p>
+      //         Current status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/Jay-a/vue-modern-portfolio">Jay-a/vue-modern-portfolio</a>
+      //     </p>
+      //     <p>
+      //       A Vue.js-based and powered-by-Vuetify (material UI kit) integrated with Google Firebase to deploy and monitor!
+      //     </p>
+      //   `,
+      //   image: "img/timeline/my-portfolio.jpg",
+      //   icon: "mdi-github-circle",
+      // },
+      {
+        year: "2019/20",
+        title: "University of Regina - Cybersecurity Researcher",
+        html: `
+          <p>
+              <ul>
+              <li> Designing and modeling cybersecurity architecture, security systems and security-focused tools, mitigation plans, and algorithms for risk assessment and solve cybersecurity issues in cyber-physical systems.
+              <li>Analyzed security vulnerabilities and developed security measures to mitigate cyber risks in smart grid.</li>
+              <li>	Developed penetration testing tools to identify security weaknesses, and computing threat vectors. </li>
+              <li> Designed security mechanisms for secure siting of embedded systems. </li>
+              <li> Implemented the proposed cybersecurity architecture on an actual electric utility – the SaskPower grid of Saskatchewan province, to analyze the feasibility and accuracy of the architecture.</li>
+              </ul>
+          </p>
+        `,
+        image: "img/timeline/uofr.png",
+        iconImage: "img/timeline/uofrIcon.jpg",
       },
       // {
       //   year : 'So far ...',

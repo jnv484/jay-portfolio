@@ -5,17 +5,10 @@
     </div>
     <slot v-if="$slots.default" />
     <template v-else-if="$scopedSlots.items">
-      <slot
-        name="items"
-        :items="options.items"
-      />
+      <slot name="items" :items="options.items" />
     </template>
     <template v-else-if="$scopedSlots.item">
-      <slot
-        v-for="(item) in options.items"
-        name="item"
-        :item="item"
-      />
+      <slot v-for="item in options.items" name="item" :item="item" />
     </template>
     <template v-else>
       <sidebar-section-item
@@ -28,17 +21,17 @@
 </template>
 
 <script>
-import SidebarSectionItem from '@/views/dark-template/sidebar/SectionItem'
+import SidebarSectionItem from "@/views/dark-template/sidebar/SectionItem";
 export default {
-  name      : 'SidebarSection',
+  name: "SidebarSection",
   components: { SidebarSectionItem },
-  props     : { options: { type: Object, default: () => {} } },
-}
+  props: { options: { type: Object, default: () => {} } },
+};
 </script>
 
 <style scoped>
 .title {
-    border-bottom: 2px #bfbfbf solid;
+  border-bottom: 2px #bfbfbf solid;
   font-weight: 300;
   line-height: 1.5 !important;
   letter-spacing: 0.2em !important;
