@@ -89,13 +89,8 @@
           </v-timeline-item>
         </v-timeline>
         <template v-if="detailed">
-          <!-- <v-card elevation="2" v-for="(item, i) in projectItems" :key="i">
-            <v-card-title>abcd</v-card-title>
-            <v-card-title>Cafe Badilico</v-card-title>
-            <v-card-text>{{ item.text }}</v-card-text>
-          </v-card> -->
-          <v-layout style="margin-bottom: 16px">
-            <v-flex md11 sm10 xs12>
+          <v-layout style="margin-bottom: 2em">
+            <v-flex md12 sm10 xs12>
               <v-card class="elevation-1">
                 <v-card-title class="pb-0">
                   <div>
@@ -103,11 +98,13 @@
                   </div>
                 </v-card-title>
                 <v-card-text>
-                  <v-layout wrap>
+                  <v-layout column>
                     <!-- <v-flex :md7="!!item.image" :md12="!item.image" xs12> -->
                     <div class="mr-1">
                       <span
-                        ><ul style="list-style-type: disc">
+                        ><ul
+                          style="list-style-type: disc; word-wrap: break-word"
+                        >
                           <li>
                             Developed cyber security architectures for critical
                             infrastructure systems to analyze security
@@ -152,7 +149,7 @@
           </v-layout>
 
           <v-layout style="margin-bottom: 2em">
-            <v-flex md11 sm10 xs12>
+            <v-flex md12 sm10 xs12>
               <v-card class="elevation-1">
                 <v-card-title class="pb-0">
                   <div>
@@ -164,7 +161,9 @@
                     <!-- <v-flex :md7="!!item.image" :md12="!item.image" xs12> -->
                     <div class="mr-1">
                       <span
-                        ><ul style="list-style-type: disc;word-wrap:break-word;">
+                        ><ul
+                          style="list-style-type: disc; word-wrap: break-word"
+                        >
                           <li>
                             J. Nayak and I. Al-Anbagi, "Modelling False Data
                             Injection Attacks Against Non-linear State
@@ -196,8 +195,8 @@
             </v-flex>
           </v-layout>
 
-          <v-layout style="margin-bottom: 16px">
-            <v-flex md11 sm10 xs12>
+          <v-layout style="margin-bottom: 2em">
+            <v-flex md12 sm10 xs12>
               <v-card class="elevation-1">
                 <v-card-title class="pb-0">
                   <div>
@@ -205,7 +204,7 @@
                   </div>
                 </v-card-title>
                 <v-card-text>
-                  <v-layout wrap>
+                  <v-layout column>
                     <!-- <v-flex :md7="!!item.image" :md12="!item.image" xs12> -->
                     <div class="mr-1">
                       <span
