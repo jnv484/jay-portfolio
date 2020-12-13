@@ -272,13 +272,13 @@ export default {
               Designed and developed UI screens, backend service architecture, and database for contract creation mechanism between a buyer and a vendor, along with mechanisms for its amendments and approval process.
           </p>
           <p>
-            Rest API calls to allow file transfers between buyers and vendors in the client-server system.
+            Rest API calls to communicate between buyers and vendors in the client-server system and approval work flow.
           </p>
           <p>
             Module Owner, Team leader, managing a team of 4-5 software developers. Mentoring junior developers.
           </p>
           <p>
-          Managing tasks allocations and task deadlines among team members, collaborating with cross-functional development teams, management, and business team to ensure successful and timely deliveries.
+          Requirements gathering, managing tasks allocations and task deadlines among team members, collaborating with cross-functional development teams, management, and business team to ensure successful and timely deliveries.
           </p>
         `,
         image: "img/timeline/manpower.png",

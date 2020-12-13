@@ -82,7 +82,7 @@ export default {
             {
               name: "Resume",
               icon: "mdi-text",
-              file: "static/Resume_JayNayak.docx",
+              file: "Resume_JayNayak.docx",
               text: "Save My Resume",
             },
             {

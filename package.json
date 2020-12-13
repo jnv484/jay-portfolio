@@ -41,9 +41,7 @@
     "vue-template-compiler": "^2.5.21",
     "vuetify-loader": "^1.0.5"
   },
-  "gitHooks": {
-    
-  },
+  "gitHooks": {},
   "lint-staged": {
     "*.{js,vue}": [
       "vue-cli-service lint",
