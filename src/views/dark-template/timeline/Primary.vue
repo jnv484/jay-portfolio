@@ -151,7 +151,7 @@
             </v-flex>
           </v-layout>
 
-          <v-layout style="margin-bottom: 16px">
+          <v-layout style="margin-bottom: 2em">
             <v-flex md11 sm10 xs12>
               <v-card class="elevation-1">
                 <v-card-title class="pb-0">
@@ -160,11 +160,11 @@
                   </div>
                 </v-card-title>
                 <v-card-text>
-                  <v-layout wrap>
+                  <v-layout column>
                     <!-- <v-flex :md7="!!item.image" :md12="!item.image" xs12> -->
                     <div class="mr-1">
                       <span
-                        ><ul style="list-style-type: disc">
+                        ><ul style="list-style-type: disc;word-wrap:break-word;">
                           <li>
                             J. Nayak and I. Al-Anbagi, "Modelling False Data
                             Injection Attacks Against Non-linear State
@@ -221,209 +221,6 @@
               </v-card>
             </v-flex>
           </v-layout>
-          <!-- <v-card elevation="2">
-            <div
-              style="
-                margin-top: 0in;
-                margin-right: 0in;
-                margin-bottom: 8pt;
-                margin-left: 0in;
-                line-height: 107%;
-                font-size: 15px;
-                font-family: 'Roboto', 'sans-serif';
-                border: none;
-                border-bottom: solid windowtext 1pt;
-                padding: 0in 0in 1pt 0in;
-              "
-            >
-              <p
-                style="
-                  margin-top: 0in;
-                  margin-right: 0in;
-                  margin-bottom: 0.0001pt;
-                  margin-left: 0in;
-                  line-height: normal;
-                  font-size: 16.38px;
-                  font-family: 'Roboto', 'sans-serif';
-                  font-weight: bold;
-                  border: none;
-                  padding: 0in;
-                "
-              >
-                <span style="font-weight: bold"
-                  ><span style="font-weight: bold"
-                    >Research and Projects (Academic)</span
-                  ></span
-                >
-              </p>
-            </div>
-            <ul style="list-style-type: disc">
-              <li>
-                Developed cyber security architectures for SCADA systems to
-                analyze security vulnerabilities, secure operations, and secure
-                siting of distributed generation (such as, Small Modular
-                Reactors (SMRs)).
-              </li>
-              <li>
-                Designed enterprise network architecture using communication
-                protocols (such as, TCP/IP, UDP, IPSEC, SSL/TLS, routing
-                protocols) to create geographically separated and interconnected
-                autonomous systems.
-              </li>
-              <li>
-                Developed a health care monitoring system with wireless sensor
-                network in the lab.
-              </li>
-              <li>
-                Modeled a sentiment analysis / information retrieval of movie
-                reviews using Natural Language Processing (NLP) and Machine
-                Learning algorithms in Python.
-              </li>
-              <li>
-                Developed a reverse blocking (RB) application between two
-                relaying systems for a coordinated protection scheme in the lab.
-              </li>
-              <li>
-                Developed an energy management system in the lab to regulate the
-                energy flow between power stations and substations.
-              </li>
-            </ul>
-          </v-card>
-          <v-card elevation="2">
-            <div
-              style="
-                margin-top: 0in;
-                margin-right: 0in;
-                margin-bottom: 8pt;
-                margin-left: 0in;
-                line-height: 107%;
-                font-size: 15px;
-                font-family: 'Roboto', 'sans-serif';
-                border: none;
-                border-bottom: solid windowtext 1pt;
-                padding: 0in 0in 1pt 0in;
-              "
-            >
-              <p
-                style="
-                  margin-top: 0in;
-                  margin-right: 0in;
-                  margin-bottom: 0.0001pt;
-                  margin-left: 0in;
-                  line-height: normal;
-                  font-size: 16.38px;
-                  font-family: 'Roboto', 'sans-serif';
-                  font-weight: bold;
-                  border: none;
-                  padding: 0in;
-                "
-              >
-                <span style="font-weight: bold"
-                  ><span style="font-weight: bold"
-                    >List of Publications/Presentations</span
-                  ></span
-                >
-              </p>
-            </div>
-            <ul style="list-style-type: disc">
-              <li>
-                J. Nayak and I. Al-Anbagi, &quot;Modelling False Data Injection
-                Attacks Against Non-linear State Estimation in AC Power
-                Systems,&quot;
-                <em
-                  >2020 8th International Conference on Smart Grid
-                  (icSmartGrid)</em
-                >, Paris, France, 2020, pp. 37-42, doi:
-                10.1109/icSmartGrid49881.2020.9144947.
-              </li>
-              <li>
-                Jay Nayak and Irfan Al-Anbagi, &ldquo;The Impact of
-                Cybersecurity on Siting Distributed Generation Units in AC Power
-                Systems&rdquo;,
-                <em>in IEEE Electric Power and Energy Conference (EPEC) 2020</em
-                >, Edmonton, Canada, November, 2020, accepted.
-              </li>
-              <li>
-                Jay Nayak and Irfan Al-Anbagi, &ldquo;Vulnerability Assessment
-                and Defense Strategy to Site Distributed Generation in Smart
-                Grid&rdquo;, in IEEE Transactions on Smart Grid, (under
-                submission).
-              </li>
-            </ul>
-          </v-card>
-          <v-card elevation="2">
-            <div
-              style="
-                margin-top: 0in;
-                margin-right: 0in;
-                margin-bottom: 8pt;
-                margin-left: 0in;
-                line-height: 107%;
-                font-size: 15px;
-                font-family: 'Roboto', 'sans-serif';
-                border: none;
-                border-bottom: solid windowtext 1pt;
-                padding: 0in 0in 1pt 0in;
-              "
-            >
-              <p
-                style="
-                  margin-top: 0in;
-                  margin-right: 0in;
-                  margin-bottom: 0.0001pt;
-                  margin-left: 0in;
-                  line-height: normal;
-                  font-size: 16.38px;
-                  font-family: 'Roboto', 'sans-serif';
-                  font-weight: bold;
-                  border: none;
-                  padding: 0in;
-                "
-              >
-                <span style="font-weight: bold"
-                  ><span style="font-weight: bold">Thesis</span></span
-                >
-              </p>
-            </div>
-            <div
-              style="
-                margin-top: 0in;
-                margin-right: 0in;
-                margin-bottom: 8pt;
-                margin-left: 0in;
-                line-height: 107%;
-                font-size: 15px;
-                font-family: 'Roboto', 'sans-serif';
-              "
-            >
-              <ul
-                style="
-                  margin-bottom: 0in;
-                  list-style-type: disc;
-                  margin-left: 0in;
-                "
-              >
-                <li
-                  style="
-                    margin-top: 0in;
-                    margin-right: 0in;
-                    margin-bottom: 8pt;
-                    margin-left: 0in;
-                    line-height: 107%;
-                    font-size: 15px;
-                    font-family: 'Roboto', 'sans-serif';
-                  "
-                >
-                  <span style="font-size: 15px; font-weight: normal"
-                    >Jay Nayak, Cybersecurity Impact on Siting Distributed
-                    Generation in a Smart Grid Environment, Master of Applied
-                    Science, Electronic Systems Engineering, University of
-                    Regina, October 2020.</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </v-card> -->
         </template>
       </content-section>
     </v-card-text>
