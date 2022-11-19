@@ -165,6 +165,13 @@
                         ><ul
                           style="list-style-type: disc; word-wrap: break-word"
                         >
+                        
+                        <li>
+                          Nayak, J., Al-Anbagi, I.:
+Vulnerability assessment and defence strategy to site
+distributed generation in smart grid. IET Smart Grid.
+1–16 (2022). https://doi.org/10.1049/stg2.12059
+                          </li>
                           <li>
                             J. Nayak and I. Al-Anbagi, "Modelling False Data
                             Injection Attacks Against Non-linear State
@@ -174,17 +181,7 @@
                             10.1109/icSmartGrid49881.2020.9144947.
                           </li>
                           <li>
-                            Jay Nayak and Irfan Al-Anbagi, "The Impact of
-                            Cybersecurity on Siting Distributed Generation Units
-                            in AC Power Systems", in IEEE Electric Power and
-                            Energy Conference (EPEC) 2020 Edmonton, Canada,
-                            November, 2020, accepted.
-                          </li>
-                          <li>
-                            Jay Nayak and Irfan Al-Anbagi, "Vulnerability
-                            Assessment and Defense Strategy to Site Distributed
-                            Generation in Smart Grid", in IEEE Transactions on
-                            Smart Grid, (under submission).
+                            J. Nayak and I. Al-Anbagi, "The Impact of Cybersecurity on Siting Distributed Generation Units in AC Power Systems," 2020 IEEE Electric Power and Energy Conference (EPEC), 2020, pp. 1-6, doi: 10.1109/EPEC48502.2020.9319924.
                           </li>
                         </ul></span
                       >
@@ -324,6 +321,25 @@ export default {
         `,
         image: "img/timeline/uofr.png",
         iconImage: "img/timeline/uofrIcon.jpg",
+      },
+      {
+        year: "2021/22",
+        title: "British Columbia Institute of Technology - Research Analyst",
+        html: `
+          <p>
+              <ul>
+              <li> Design, write, modify, integrate, and test full-stack software applications.
+              <li>Identify technical problems and communicate effective strategies during proposal, technical due diligence, and/or design phases.</li>
+              <li>Benchmark and debug critical issues, and participate in software design and code reviews. </li>
+              <li> Assist in deploying, monitoring, and troubleshooting production systems. </li>
+              <li> Develop and document APIs. Assist in developing logical and physical specifications.</li>
+              <li>Prepare progress reports and manuals, summarize results, and present on project outcomes.</li>
+              <li>Manage and respond to project related email, maintain notes and references in an organized manner.</li>
+              </ul>
+          </p>
+        `,
+        image: "img/timeline/bcit.png",
+        iconImage: "img/timeline/BCIT_logo.png",
       },
     ],
     projectItems: [

@@ -37,7 +37,7 @@
       <content-section v-if="employments" title="Employment">
         <v-layout wrap>
           <template v-for="(employment, i) in employments">
-            <v-flex v-if="!employment.divider" :key="i">
+            <v-flex v-if="!employment.divider" :key="i" md4 mb-4 xs12>
               <v-flex md6> {{ employment.from }} - {{ employment.to }} </v-flex>
               <v-flex md10>
                 <strong v-if="employment.title">{{ employment.title }}</strong>
@@ -50,7 +50,7 @@
               </v-flex>
             </v-flex>
 
-            <v-flex v-if="employment.divider" :key="i" md1 mb-4 xs12 />
+            <!-- <v-flex v-if="employment.divider" :key="i" md1 mb-4 xs12 /> -->
           </template>
         </v-layout>
       </content-section>
@@ -130,6 +130,13 @@ export default {
   components: { ContentSection },
   data: () => ({
     employments: [
+    {
+        from: "02/2021",
+        to: "present",
+        title: "Research Analyst",
+        location: "British Columbia Institute of Technology",
+        description: "Burnaby, BC, Canada",
+      },
       {
         from: "01/2019",
         to: "12/2020",
@@ -151,7 +158,7 @@ export default {
         from: "2018",
         to: "2020",
         title:
-          "Master of Applied Science - Electronic Systems Engineering, GPA: 88.4/100",
+          "Master of Applied Science - Electronic Systems Engineering, GPA: 4.0/4.0",
         location: "University of Regina, Regina, SK, Canada",
         // description: "",
       },
@@ -166,55 +173,39 @@ export default {
       { divider: true },
     ],
     skills: [
-      {
-        title: "Java",
-        icon: "mdi-language-java",
-        value: 90,
-      },
-      {
+    {
         title: "JavaScript",
         icon: "mdi-language-javascript",
-        value: 70,
-      },
-      {
-        title: "Spring Boot",
-        icon: "mdi-codepen",
-        value: 70,
+        value: 95,
       },
       {
         title: "React JS",
         icon: "mdi-react",
-        value: 50,
+        value: 95,
       },
       {
-        title: "MySQL / PostgreSQL",
-        icon: "mdi-database",
-        value: 85,
-      },
-      {
-        title: "Zk",
-        icon: "mdi-code-braces",
-        value: 82,
+        title: "Node JS",
+        icon: "mdi-nodejs",
+        value: 87,
       },
       {
         title: "Python",
         icon: "mdi-language-python",
-        value: 77,
+        value: 90,
       },
       {
-        title: "C++ / C",
-        icon: "mdi-language-c",
-        value: 73,
+        title: "Django",
+        icon: "mdi-codepen",
+        value: 90,
       },
       {
-        title: "HTML5",
-        icon: "mdi-language-html5",
-        value: 70,
+        title: "Java",
+        icon: "mdi-language-java",
+        value: 95,
       },
-      // { divider: true },
       {
-        title: "CSS",
-        icon: "mdi-language-css3",
+        title: "Spring Boot",
+        icon: "mdi-codepen",
         value: 70,
       },
       {
@@ -223,14 +214,39 @@ export default {
         value: 80,
       },
       {
-        title: "Distributed Systems",
-        icon: "mdi-server",
-        value: 60,
+        title: "HTML5",
+        icon: "mdi-language-html5",
+        value: 99,
+      },
+      {
+        title: "CSS",
+        icon: "mdi-language-css3",
+        value: 99,
+      },
+      {
+        title: "MySQL / PostgreSQL",
+        icon: "mdi-database",
+        value: 85,
+      },
+      {
+        title: "Git",
+        icon: "mdi-git",
+        value: 95,
+      },
+      {
+        title: "Docker",
+        icon: "mdi-docker",
+        value: 85,
+      },
+      {
+        title: "Amazon Web Services (AWS)",
+        icon: "mdi-aws",
+        value: 70,
       },
       {
         title: "Linux",
         icon: "mdi-linux",
-        value: 55,
+        value: 80,
       },
       {
         title: "Requirements Gathering",
@@ -247,36 +263,9 @@ export default {
         icon: "mdi-database-edit",
         value: 80,
       },
-
-      // {
-      //   title: 'CentOS Server',
-      //   icon : 'mdi-linux',
-      //   value: 47,
-      // },
-      // {
-      //   title: 'Web Application Security',
-      //   icon : 'mdi-shield-lock',
-      //   value: 80,
-      // },
-      // { divider: true },
-      {
-        title: "Matlab",
-        icon: "mdi-chip",
-        value: 90,
-      },
       {
         title: "Cybersecurity",
         icon: "mdi-server-security",
-        value: 70,
-      },
-      {
-        title: "Penetration Testing",
-        icon: "mdi-shield-lock",
-        value: 70,
-      },
-      {
-        title: "Vulnerability Assessment",
-        icon: "mdi-security-network",
         value: 70,
       },
       {
@@ -284,24 +273,33 @@ export default {
         icon: "mdi-robot",
         value: 75,
       },
-      // {
-      //   title: 'C/C++',
-      //   icon : 'mdi-language-cpp',
-      //   value: 38,
-      // },
-      // { divider: true },
-      // {
-      //   title: 'Leadership',
-      //   icon : 'mdi-account-group',
-      //   value: 68,
-      // },
-      // {
-      //   title: 'Content Marketing (+340 articles)',
-      //   icon : 'mdi-text',
-      //   value: 96,
-      // },
     ],
     tools: [
+    {
+        icon: "",
+        text: "Git",
+        source: "",
+      },
+    {
+        icon: "",
+        text: "Node Package Manager (npm)",
+        source: "",
+      },
+      {
+        icon: "",
+        text: "pip",
+        source: "",
+      },
+    {
+        icon: "",
+        text: "Visual Studio Code",
+        source: "",
+      },
+      {
+        icon: "",
+        text: "PyCharm",
+        source: "",
+      },
       {
         icon: "",
         text: "Eclipse",
@@ -309,27 +307,12 @@ export default {
       },
       {
         icon: "",
-        text: "Visual Studio Code",
-        source: "",
-      },
-      {
-        icon: "",
-        text: "SQuirrel SQL Client",
+        text: "MySQL Workbench",
         source: "",
       },
       {
         icon: "",
         text: "Jupyter Notebook",
-        source: "",
-      },
-      {
-        icon: "",
-        text: "Git",
-        source: "",
-      },
-      {
-        icon: "",
-        text: "Tortoise SVN",
         source: "",
       },
       {
@@ -340,21 +323,6 @@ export default {
       {
         icon: "",
         text: "Wireshark",
-        source: "",
-      },
-      {
-        icon: "",
-        text: "Riverbed Modeler",
-        source: "",
-      },
-      {
-        icon: "",
-        text: "Microsoft Visio",
-        source: "",
-      },
-      {
-        icon: "",
-        text: "Network Simulator (NS2)",
         source: "",
       },
     ],

@@ -7,7 +7,7 @@
           <!-- Jay <span class="light-blue--text text--lighten-3">Nayak</span> -->
           <span class="light-blue--text text--lighten-2">Jay Nayak, MASc</span>
         </h1>
-        <span> Software Engineer | Cybersecurity Researcher </span>
+        <span> Software Engineer </span>
       </div>
 
       <sidebar-section :options="sections.info" />
@@ -69,11 +69,11 @@ export default {
               icon: "mdi-email",
               text: "jayknayak@gmail.com",
             },
-            {
-              name: "Contact Number",
-              icon: "mdi-cellphone",
-              text: "+1 639-999-6561",
-            },
+            // {
+            //   name: "Contact Number",
+            //   icon: "mdi-cellphone",
+            //   text: "+1 639-999-6561",
+            // },
             // {
             //   name: "Website",
             //   icon: "mdi-web",
@@ -85,11 +85,11 @@ export default {
               file: "Resume_JayNayak.docx",
               text: "Save My Resume",
             },
-            {
-              name: "Address",
-              icon: "mdi-map-marker",
-              text: "16 – 4239 Degeer St, Saskatoon, SK, S7H 4N6",
-            },
+            // {
+            //   name: "Address",
+            //   icon: "mdi-map-marker",
+            //   text: "16 – 4239 Degeer St, Saskatoon, SK, S7H 4N6",
+            // },
           ],
         },
         socials: {
@@ -106,15 +106,20 @@ export default {
               link: "https://www.linkedin.com/in/jayknayak/",
             },
             {
+              icon: "mdi-github-box",
+              text: "github.com/jayknayak",
+              link: "https://github.com/jayknayak",
+            },
+            {
               icon: "mdi-twitter",
               text: "twitter.com/JayNayak",
               link: "https://twitter.com/jayknayak",
             },
-            {
-              icon: "mdi-instagram",
-              text: "instagram.com/JayNayak",
-              link: "https://instagram.com/jayknayak",
-            },
+            // {
+            //   icon: "mdi-instagram",
+            //   text: "instagram.com/JayNayak",
+            //   link: "https://instagram.com/jayknayak",
+            // },
           ],
         },
         interests: {
@@ -205,7 +210,7 @@ export default {
           items: [
             {
               text: "English",
-              value: 90,
+              value: 95,
             },
             {
               text: "Hindi",

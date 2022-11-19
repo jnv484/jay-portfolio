@@ -65,7 +65,7 @@ export default {
   height: 100%;
   background: #66668d;
   background: -webkit-linear-gradient(to left, #66668d, #4389a2);
-  background: linear-gradient(to left, rgb(255, 219, 212), #89abe3ff);
+  background: linear-gradient(to left, #f8f7ff, #b8b8ff);
   background-size: cover;
 }
 </style>
